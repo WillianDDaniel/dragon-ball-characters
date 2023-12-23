@@ -8,6 +8,8 @@
 
 # testing
 /coverage
+/src/app/teste
+/src/components/Teste.tsx
 
 # next.js
 /.next/
