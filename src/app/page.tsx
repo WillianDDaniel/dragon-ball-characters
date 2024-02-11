@@ -5,7 +5,7 @@ import Main from "@/components/main/Main";
 import { useState, useEffect } from "react";
 
 async function getData() {
-  const res = await fetch('http://localhost:3001/characters-dragonball')
+  const res = await fetch('https://anime-characters-backend.vercel.app/characters-dragonball')
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
