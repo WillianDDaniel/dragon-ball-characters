@@ -16,7 +16,7 @@ export default function Slide(props: slideProps) {
     return (
         <div className={props.slideStyle.mainDiv}>
             <div className={props.slideStyle.leftArrowDiv}>
-                <img src="https://characteresnaruto.sirv.com/itens/left-arrow.png" alt=""
+                <img src="https://animecharacters.sirv.com/itens/left-arrow.png" alt=""
                     onClick={props.prev}
                 />
             </div>
@@ -27,7 +27,7 @@ export default function Slide(props: slideProps) {
             </div>
 
             <div className={props.slideStyle.rightArrowDiv}>
-                <img src="https://characteresnaruto.sirv.com/itens/right-arrow.png" alt=""
+                <img src="https://animecharacters.sirv.com/itens/right-arrow.png" alt=""
                     onClick={props.next} />
             </div>
         </div>

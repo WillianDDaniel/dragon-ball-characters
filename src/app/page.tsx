@@ -5,7 +5,7 @@ import Main from "@/components/main/Main";
 import { useState, useEffect } from "react";
 
 async function getData() {
-  const res = await fetch('https://backend-naruto-info.vercel.app/characters')
+  const res = await fetch('http://localhost:3001/characters-dragonball')
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
@@ -15,7 +15,6 @@ async function getData() {
 
 interface Character {
   infoCharacter: any
-  
 }
 
 export default function Home() {

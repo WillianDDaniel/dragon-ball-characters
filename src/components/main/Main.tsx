@@ -39,7 +39,7 @@ export default function Main(props: mainProps) {
     }
     
     return (
-        <main className="flex flex-col lg:flex-row justify-center lg:h-[85vh] h-auto">
+        <main className="flex flex-col lg:flex-row justify-center lg:h-[84vh] h-auto">
             <CharacterInfo
                 infoCharacter={props.infoCharacter}
                 nextCharacter={props.nextCharacter}

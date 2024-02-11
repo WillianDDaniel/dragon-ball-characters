@@ -26,7 +26,6 @@ export default function MoreInfo(props: MoreInfoProps) {
 
             <Slide
                 slideStyle={slideStyle}
-                // precisa verificar o que está acontecendo
                 imageSrc={props.infoExtraCharacter ? props.infoExtraCharacter.image : props.fallbackToDefaultImage()}
                 next={props.nextImg}
                 prev={props.prevImg}

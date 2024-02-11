@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['source.unsplash.com']
+        domains: ['https://anime-characters-backend.vercel.app']
     }
 }
 
