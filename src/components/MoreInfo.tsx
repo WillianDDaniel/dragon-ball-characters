@@ -22,7 +22,7 @@ export default function MoreInfo(props: MoreInfoProps) {
 
     return (
         <section className="flex flex-col items-center lg:w-[59%] w-full overflow-hidden">
-            <h2 className="flex w-full justify-center text-2xl pt-3">Mais informações</h2>
+            <h2 className="flex w-full justify-center text-orange-500 font-semibold text-2xl mt-3">mais informações...</h2>
 
             <Slide
                 slideStyle={slideStyle}
@@ -31,8 +31,8 @@ export default function MoreInfo(props: MoreInfoProps) {
                 prev={props.prevImg}
             />
 
-            <h3 className="pt-4">{props.infoExtraCharacter ? props.infoExtraCharacter.name : ''}</h3>
-            <p className="py-3 px-3 text-sm text-center bg-zinc-600 ml-6 mx-3 mt-4 mb-4 rounded-md">{props.infoExtraCharacter ? props.infoExtraCharacter.text : ''}</p>
+            <h3 className="pt-3">{props.infoExtraCharacter ? props.infoExtraCharacter.name : ''}</h3>
+            <p className="py-2.5 px-3 text-sm text-center bg-zinc-600 ml-6 mx-3 mt-3 mb-4 rounded-md">{props.infoExtraCharacter ? props.infoExtraCharacter.text : ''}</p>
 
         </section>
     )

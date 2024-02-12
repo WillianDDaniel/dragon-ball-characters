@@ -23,7 +23,7 @@ export default function CharacterInfo(props: characterInfoProps) {
 
     return (
         <section className="flex flex-col items-center lg:w-[39%] h-auto w-full lg:border-r-2 lg:border-zinc-800">
-            <h2 className="mt-2 bg-zinc-900 px-3 py-0.5 rounded-sm">{props.infoCharacter.name}</h2>
+            <h2 className="mt-2 mb-1 w-[60%] text-center bg-zinc-900 text-orange-600 font-semibold px-3 py-0.5 rounded-md">{props.infoCharacter.name}</h2>
             <Slide
                 slideStyle={slideStyle}
                 imageSrc={props.infoCharacter.profile_img}
