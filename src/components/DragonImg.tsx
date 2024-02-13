@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 import DragonBalPng from "/public/dragonball.png"
 
 export default function DragonImg() {
@@ -6,6 +6,6 @@ export default function DragonImg() {
         src={DragonBalPng}
         width={27}
         height={27}
-        alt="Picture of the author"
+        alt="esfera do dragão"
     /> 
 }

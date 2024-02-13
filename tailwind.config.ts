@@ -8,11 +8,18 @@ const config: Config = {
   ],
   theme: {
     screens: {
+
+      // Custons Queries bellow
+
       'sm-1': {'max': '620px'},
       // => @media (max-width: 620px) { ... }
 
       'sm-2': {'max': '315px'},
       // => @media (max-width: 620px) { ... }
+
+      /*********************************************************/
+
+      // Standard Queries bellow
 
       'md-custom': {'min': '681px', 'max': '1023px'},
       // => @media (min-width: 768px and max-width: 1023px) { ... }
@@ -31,6 +38,7 @@ const config: Config = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+      
     },
     extend: {
       backgroundImage: {

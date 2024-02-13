@@ -6,16 +6,16 @@ export default function Footer() {
             sm-2:h-auto sm-2:text-center sm-2:p-3
             `}>
 
-            {/* Footer para tela grande (LG) */}
+            {/* Footer to large screens (LG) */}
             <div className={`
-                hidden h-[8vh] lg:flex items-center justify-center
+                hidden h-[8vh] items-center justify-center lg:flex
             `}>
                 Todos os direitos reservados © 2024 | Desenvolvido com ❤️ por Willian D. Daniel
             </div>
 
-            {/* Footer para outras telas */}
+            {/* Footer to another any screens */}
             <div className={`
-                lg:hidden h-[9vh] flex flex-col items-center justify-center sm-2:h-auto
+                 flex flex-col items-center justify-center h-[9vh] lg:hidden sm-2:h-auto
             `}>
                 <p>
                     Todos os direitos reservados © 2024

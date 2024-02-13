@@ -1,6 +1,6 @@
-import AdditionalInfo from "./AdditionalInfo";
-import ResumeInfo from "./ResumeInfo";
-import Slide from "./Slide";
+import AdditionalInfo from "./AdditionalInfo"
+import ResumeInfo from "./ResumeInfo"
+import Slide from "./Slide"
 
 
 interface characterInfoProps {
@@ -11,6 +11,7 @@ interface characterInfoProps {
 
 export default function CharacterInfo(props: characterInfoProps) {
 
+    // Object to style the slide component in the Characters Info Section
     const slideStyle = {
         mainDiv: 'flex w-[95%] lg:h-[29vh] h-auto justify-center p-3 items-center',
         leftArrow: '',
@@ -23,7 +24,9 @@ export default function CharacterInfo(props: characterInfoProps) {
 
     return (
         <section className={`
-            flex flex-col items-center lg:w-[39%] h-auto w-full lg:border-r-2 lg:border-zinc-800
+            flex flex-col items-center 
+            h-auto w-full 
+            lg:w-[39%] lg:border-r-2 lg:border-zinc-800
         `}>
             <h2 className={`
                 mt-2 w-[60%] text-center bg-zinc-900 text-orange-600 

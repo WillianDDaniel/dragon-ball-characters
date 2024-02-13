@@ -1,4 +1,4 @@
-import Slide from "./Slide";
+import Slide from "./Slide"
 
 interface MoreInfoProps {
     infoExtraCharacter: any
@@ -9,6 +9,7 @@ interface MoreInfoProps {
 
 export default function MoreInfo(props: MoreInfoProps) {
 
+    // Object to style the slide component in the More Info Section
     const slideStyle = {
         mainDiv: 'flex w-full justify-center p-1 items-center',
         leftArrow: '',
@@ -21,7 +22,8 @@ export default function MoreInfo(props: MoreInfoProps) {
     
 
     return (
-        <section className="flex flex-col items-center lg:w-[59%] w-full overflow-hidden">
+        <section className="flex flex-col items-center w-full overflow-hidden lg:w-[59%]">
+
             <h2 className={`
                 flex w-full justify-center text-orange-500 font-semibold text-2xl mt-3
                 sm-2:text-md sm-2:text-center
