@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CharacterInfo from "../CharacterInfo";
 import MoreInfo from "../MoreInfo";
 
@@ -9,9 +9,10 @@ interface mainProps {
 }
 
 export default function Main(props: mainProps) {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    // Função para avançar para o próximo personagem
 
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    
+    // Função para avançar para o próximo personagem
     const next = () => {
         setCurrentImageIndex(nextIndex => {
             if (nextIndex === props.infoCharacter.extras.length - 1) {
@@ -30,7 +31,6 @@ export default function Main(props: mainProps) {
             } else {
                 return prevIndex - 1; // Retrocede para o elemento anterior
             }
-
         })
     }
 
@@ -39,12 +39,15 @@ export default function Main(props: mainProps) {
     }
     
     return (
-        <main className="flex flex-col lg:flex-row justify-center lg:h-[84vh] h-auto">
+        <main className={`
+            flex flex-col lg:flex-row justify-center lg:h-[84vh] h-auto
+        `}>
             <CharacterInfo
                 infoCharacter={props.infoCharacter}
                 nextCharacter={props.nextCharacter}
                 prevCharacter={props.prevCharacter}
             />
+            
             <MoreInfo
                 infoExtraCharacter={props.infoCharacter.extras[currentImageIndex]}
                 nextImg={next}
