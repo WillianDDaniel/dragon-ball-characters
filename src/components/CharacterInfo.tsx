@@ -2,11 +2,10 @@ import AdditionalInfo from "./AdditionalInfo"
 import ResumeInfo from "./ResumeInfo"
 import Slide from "./Slide"
 
-
 interface characterInfoProps {
-    infoCharacter: any
-    nextCharacter: () => void
-    prevCharacter: () => void
+    data?: any
+    next: () => void 
+    prev: () => void 
 }
 
 export default function CharacterInfo(props: characterInfoProps) {
@@ -22,6 +21,8 @@ export default function CharacterInfo(props: characterInfoProps) {
         mainImg: 'rounded-md md-custom:w-[90%] lg:w-5/6 w-5/5'
     }
 
+    const character = props.data
+    
     return (
         <section className={`
             flex flex-col items-center 
@@ -32,23 +33,22 @@ export default function CharacterInfo(props: characterInfoProps) {
                 mt-2 w-[60%] text-center bg-zinc-900 text-orange-600 
                 font-semibold px-3 py-0.5 rounded-md
             `}>
-                {props.infoCharacter.name}
+                {character.name}
             </h2>
 
             <Slide
                 slideStyle={slideStyle}
-                imageSrc={props.infoCharacter.profile_img}
-                next={props.nextCharacter}
-                prev={props.prevCharacter}
-            />
-            
-            <AdditionalInfo additional={props.infoCharacter.additional} 
+                src={character.profile_img}
+                next={props.next}
+                prev={props.prev}
             />
 
-            <ResumeInfo resume={props.infoCharacter.resume} 
-                resumeImg={props.infoCharacter.resume_img} 
-            />
+            <AdditionalInfo 
+                data={character} />
 
+            <ResumeInfo
+                src={character.resume_img}
+                resume={character.resume}/>
         </section>
     )
 }

@@ -1,4 +1,4 @@
-import DragonImg from "../DragonImg"
+import DragonImg from "./DragonImg"
 
 export default function Header() {
     return (

@@ -1,6 +1,6 @@
 interface resumeInfoProps {
     resume: string
-    resumeImg: string
+    src: string
 }
 
 export default function ResumeInfo(props: resumeInfoProps) {
@@ -19,12 +19,12 @@ export default function ResumeInfo(props: resumeInfoProps) {
             `}>
 
                 <img 
-                    src={props.resumeImg} 
+                    src={props.src}
                     alt="" className="w-[90px] sm-1:hidden" 
                 />
 
                 <p className="p-4 text-sm text-justify">
-                    {props.resume}
+                   {props.resume}
                 </p>
 
             </div>

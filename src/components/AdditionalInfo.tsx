@@ -1,8 +1,9 @@
 interface additionalInfoProps {
-    additional: any
+    data?: any
 }
 
 export default function AdditionalInfo(props: additionalInfoProps) {
+
     return (
         <div className={`
             flex flex-col items-center justify-center w-full 
@@ -14,25 +15,25 @@ export default function AdditionalInfo(props: additionalInfoProps) {
                 <span className="text-amber-400 font-semibold">
                     Pai:&nbsp;
                 </span>
-                {props.additional.father}
+                {props.data.additional.father}
             </p>
 
             <p>
                 <span className="text-amber-400 font-semibold">
                     Mãe:&nbsp;
                 </span>
-                {props.additional.mother}
+                {props.data.additional.mother}
             </p>
             
             <p>
                 <span className="text-amber-400 font-semibold">
                     Poder:&nbsp;
                 </span>
-                {props.additional.power}
+                {props.data.additional.power}
             </p>
-
+            
             <p className="text-base text-yellow-300">
-                {props.additional.more}
+            {props.data.additional.more}
             </p>
         </div>
     )
