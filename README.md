@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personagens de Dragon Ball Website
+Este é um projeto Next.js criado com create-next-app.
 
-## Getting Started
+## Descrição
+Este é um site simples desenvolvido em React e Next.js que exibe informações e imagens de personagens de Dragon Ball.
 
-First, run the development server:
+## Tecnologias Utilizadas
+**React:** Biblioteca JavaScript para construção de interfaces de usuário.  
+**Next.js:** Framework React para desenvolvimento de aplicações web, trazendo benefícios como SSR (Server-Side Rendering) e facilitando a criação de páginas.  
+**GitHub Pages:** Plataforma de hospedagem gratuita para sites estáticos.  
+
+### Consumo de Dados
+Os dados dos personagens são obtidos através de uma API própria desenvolvida para este projeto.
+
+### Como Visualizar o Projeto
+
+Clique aqui para visualizar - 
+[https://dragon-ball-characters-nu.vercel.app](https://dragon-ball-characters-nu.vercel.app)
+
+
+### Executando Localmente
+Se precisar executar o projeto localmente, siga os passos abaixo:
+
+Clone este repositório:
+
+```bash
+git clone https://github.com/WillianDDaniel/Dragon-Ball-Characters
+```
+
+
+Navegue até o diretório do projeto:
+
+```bash
+cd Dragon-Ball-Characters
+```
+
+### Instale as dependências:
+
+```bash
+npm install
+```
+Execute o projeto:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra o navegador e acesse http://localhost:3000 para visualizar o site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Estrutura do Projeto
+A estrutura do projeto é organizada da seguinte forma:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**app/:** Contém as páginas da aplicação;  
+**components/:** Componentes reutilizáveis;  
+**global.css/:** Estilos globais e específicos;  
 
-## Learn More
+### Notas Adicionais
+Este projeto foi desenvolvido como uma prática de habilidades em React e Next.js.
+Os dados dos personagens são consumidos através de uma **API própria.** 
+Feita por mim!
+[https://anime-characters-backend.vercel.app/](https://anime-characters-backend.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+É uma demonstração simples e única, não sendo necessário clonar para visualizar.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Contato
+Se precisar de mais informações ou tiver perguntas, entre em contato pelo williandeivitidaniel@live.com.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Desenvolvido com ❤️ por Willian D. Daniel

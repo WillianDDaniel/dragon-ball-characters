@@ -1,6 +1,8 @@
 {
-  "name": "next-naruto",
-  "version": "0.1.0",
+  "name": "dragon-ball-characters",
+  "version": "1.0.1",
+  "author": "Willian-D-Daniel",
+  "description": "In this project, I use react and nextjs to consume an api, with information and images of Dragon Ball characters. It's a personal project to develop myself in technology.",
   "private": true,
   "scripts": {
     "dev": "next dev",

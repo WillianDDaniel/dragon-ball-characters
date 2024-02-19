@@ -4,8 +4,8 @@ import Slide from "./Slide"
 
 interface characterInfoProps {
     data?: any
-    next: () => void 
-    prev: () => void 
+    next: () => void
+    prev: () => void
 }
 
 export default function CharacterInfo(props: characterInfoProps) {
@@ -22,7 +22,7 @@ export default function CharacterInfo(props: characterInfoProps) {
     }
 
     const character = props.data
-    
+
     return (
         <section className={`
             flex flex-col items-center 
@@ -30,8 +30,8 @@ export default function CharacterInfo(props: characterInfoProps) {
             lg:w-[39%] lg:border-r-2 lg:border-zinc-800
         `}>
             <h2 className={`
-                mt-2 w-[60%] text-center bg-zinc-900 text-orange-600 
-                font-semibold px-3 py-0.5 rounded-md
+                w-[60%] text-center bg-zinc-900 text-orange-600 
+                font-semibold mt-2 px-3 py-0.5 rounded-md
             `}>
                 {character.name}
             </h2>
@@ -43,12 +43,12 @@ export default function CharacterInfo(props: characterInfoProps) {
                 prev={props.prev}
             />
 
-            <AdditionalInfo 
+            <AdditionalInfo
                 data={character} />
 
             <ResumeInfo
                 src={character.resume_img}
-                resume={character.resume}/>
+                resume={character.resume} />
         </section>
     )
 }

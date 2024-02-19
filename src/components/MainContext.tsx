@@ -9,11 +9,12 @@ interface MainContextProps {
 
 export default function MainContext(props: MainContextProps) {
 
-    
-    /****************************************************************************/
     const [currentIndex, setIndex] = useState(0)
 
+    // Function to advance to the next character
     function next() {
+
+        // if in the last, turn back to the first character
         if (currentIndex === props.data.characters.length - 1) {
             setIndex(0)
         } else {
@@ -21,7 +22,10 @@ export default function MainContext(props: MainContextProps) {
         }
     }
 
+    // Function to return to the previous character
     function previous() {
+
+        // if in the first, move to the last character
         if (currentIndex === 0) {
             setIndex(props.data.characters.length - 1);
         } else {
