@@ -13,8 +13,8 @@ export default function CharacterInfo(props: characterInfoProps) {
     // Object to style the slide component in the Characters Info Section
     const slideStyle = {
         mainDiv: 'flex w-[95%] lg:h-[29vh] h-auto justify-center p-3 items-center',
-        leftArrow: '',
-        rightArrow: '',
+        leftArrow: 'hover:cursor-pointer',
+        rightArrow: 'hover:cursor-pointer',
         leftArrowDiv: 'sm-2:w-2/6 w-1/6',
         rightArrowDiv: 'sm-2:w-2/6 w-1/6',
         mainImgDiv: 'md-custom:w-[55%] w-5/5 flex justify-center',

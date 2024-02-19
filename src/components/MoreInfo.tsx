@@ -11,8 +11,8 @@ export default function MoreInfo(props: MoreInfoProps) {
     // Object to style the slide component in the More Info Section
     const slideStyle = {
         mainDiv: 'flex w-full justify-center p-1 items-center',
-        leftArrow: '',
-        rightArrow: '',
+        leftArrow: 'hover:cursor-pointer',
+        rightArrow: 'hover:cursor-pointer',
         leftArrowDiv: 'w-1/6',
         rightArrowDiv: 'w-1/6',
         mainImgDiv: 'lg:w-4/6 w-4/6 flex md:px-5 pt-3 sm-2:w-5/5 sm-2:flex sm-2:justify-center sm-2:p-0',

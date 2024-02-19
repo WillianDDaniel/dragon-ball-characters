@@ -4,10 +4,14 @@ Este é um projeto Next.js criado com create-next-app.
 ## Descrição
 Este é um site simples desenvolvido em React e Next.js que exibe informações e imagens de personagens de Dragon Ball.
 
+## Screenshot
+
+![Site Screenshot](https://animecharacters.sirv.com/screenshots/screenshot-site-dragon-ball-characters.png)
+
 ## Tecnologias Utilizadas
 **React:** Biblioteca JavaScript para construção de interfaces de usuário.  
 **Next.js:** Framework React para desenvolvimento de aplicações web, trazendo benefícios como SSR (Server-Side Rendering) e facilitando a criação de páginas.  
-**GitHub Pages:** Plataforma de hospedagem gratuita para sites estáticos.  
+**Vercel:** Plataforma de hospedagem.  
 
 ### Consumo de Dados
 Os dados dos personagens são obtidos através de uma API própria desenvolvida para este projeto.

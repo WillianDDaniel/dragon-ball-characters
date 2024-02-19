@@ -23,7 +23,7 @@ export default function Slide(props: slideProps) {
                 <img src="https://animecharacters.sirv.com/itens/left-arrow.png"
                     alt="personagem anterior, história"
                     className={props.slideStyle.leftArrow}
-                    onClick={props.prev}
+                    onClick={props.prev} aria-label="previous image"
                 />
             </div>
 
@@ -38,7 +38,7 @@ export default function Slide(props: slideProps) {
                 <img src="https://animecharacters.sirv.com/itens/right-arrow.png"
                     alt="proximo personagem, história"
                     className={props.slideStyle.rightArrow}
-                    onClick={props.next}
+                    onClick={props.next} aria-label="next image"
                 />
             </div>
         </div>
