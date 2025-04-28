@@ -16,12 +16,6 @@ Este é um site simples desenvolvido em React e Next.js que exibe informações 
 ### Consumo de Dados
 Os dados dos personagens são obtidos através de uma API própria desenvolvida para este projeto.
 
-### Como Visualizar o Projeto
-
-Clique aqui para visualizar - 
-[https://dragon-ball-characters-nu.vercel.app](https://dragon-ball-characters-nu.vercel.app)
-
-
 ### Executando Localmente
 Se precisar executar o projeto localmente, siga os passos abaixo:
 
@@ -30,14 +24,11 @@ Clone este repositório:
 ```bash
 git clone https://github.com/WillianDDaniel/Dragon-Ball-Characters
 ```
-
-
 Navegue até o diretório do projeto:
 
 ```bash
 cd Dragon-Ball-Characters
 ```
-
 ### Instale as dependências:
 
 ```bash
@@ -62,10 +53,6 @@ A estrutura do projeto é organizada da seguinte forma:
 Este projeto foi desenvolvido como uma prática de habilidades em React e Next.js.
 Os dados dos personagens são consumidos através de uma **API própria.** 
 Feita por mim!
-[https://anime-characters-backend.vercel.app/](https://anime-characters-backend.vercel.app/)
-
-
-É uma demonstração simples e única, não sendo necessário clonar para visualizar.
 
 ### Contato
 Se precisar de mais informações ou tiver perguntas, entre em contato pelo williandeivitidaniel@live.com.
